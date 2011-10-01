@@ -1,0 +1,18 @@
+The Paralletor est un brute-forceur de MD5 et de SHA-1 en réseau c'est-à-dire qu'il permet un brute-force distribué sur plusieurs machines pour obtenir plus de puissance afin de tester plus de possibilité en moins de temps possible. Le projet se divise en 3 parties: L'opérateur qui lui contrôle le serveur de commande; le serveur de commande qui lui reçoit les commandes de l'opérateur et envoit des commandes au client; le client qui lui effectue le brute-force. Lors du brute-force, le client a été programmé afin d'utiliser tous les coeurs de la machine. Le programme a été fait en C++.
+
+La partie cliente du projet est compatible Linux et Windows. Par contre, le serveur et l'opérateur ne le sont pas et sont exclusivement. Un travail de conversion pourrait être fait afin de les rendre compatible.
+
+Copyright (C) 2011 Louis-Étienne Dorval et
+ Frédérik Paradis
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.

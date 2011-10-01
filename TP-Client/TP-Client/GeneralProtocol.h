@@ -1,0 +1,50 @@
+/**
+	@file	GeneralProtocol.h
+			Fichier contenant la déclaration de la classe GeneralProtocol.
+	@author Frédérik Paradis
+	@author Louis-Étienne Dorval
+	@date   16 mai 2011
+*/
+
+#pragma once
+#include <string>
+#include "Socket.h"
+#include "MD5.h"
+#include "SHA1.h"
+#include "ServerDisconnectException.h"
+
+/**
+	La classe GeneralProtocol est une classe utilitaire qui
+	permet d'implémenter la partie générale du protocole
+	créé pour ce programme. Il n'y a donc que des méthodes static
+	qui en font parties.
+*/
+class GeneralProtocol
+{
+public:
+	/**
+		Cette enumération sert à indiquer le code reçu via le réseau.
+	*/
+	enum CodeProtocol { CODE401, CODE402, CODE403, CODE404, CODE405 };
+	static CodeProtocol receiveData(Socket* socket);
+
+	static void receiveExhaustiveSearchLettersAndSalts(std::string& letters, std::string& saltBefore, std::string& saltAfter, Socket* socket);
+	static Algorithm::TypeAlgo receiveAlgoType(Socket* socket);
+	static MD5Search receiveOperatorExhaustiveMD5SearchSettings(Socket* socket);
+	static SHA1Search receiveOperatorExhaustiveSHA1SearchSettings(Socket* socket);
+
+	static void sendExhaustiveSearchLettersAndSalts(std::string letters, std::string saltBefore, std::string saltAfter, Socket* socket);
+	static void sendOperatorExhaustiveMD5SearchSettings(MD5Search md5, Socket* socket);
+	static void sendOperatorExhaustiveSHA1SearchSettings(SHA1Search sha1, Socket* socket);
+	static void sendNumberOfClient(short nb, Socket* socket);
+
+	static void sendString(const std::string& str, Socket* socket);
+	static std::string receiveString(Socket* socket);
+private:
+	GeneralProtocol(void);
+	~GeneralProtocol(void);
+
+	static std::string receiveSalt(Socket* socket);
+	static void sendSalt(const std::string& str, Socket* socket);
+};
+

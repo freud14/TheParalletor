@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Algorithm">
+      <UniqueIdentifier>{fc4d26c0-a81e-4d23-b097-2e80f4632b77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Algorithm">
+      <UniqueIdentifier>{4955f891-6bb6-4b06-b5b3-467118ae82e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Protocol">
+      <UniqueIdentifier>{c593a74d-d5f5-44c4-ac9c-3e53439d0700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Socket">
+      <UniqueIdentifier>{f023cdc2-5719-4bb6-80d1-83f663959670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Socket">
+      <UniqueIdentifier>{5048caf5-7e63-48b7-af0e-4ecd3206fecd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Protocol">
+      <UniqueIdentifier>{fd573db2-c355-45dc-9424-59cdf5403be1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Dispatcher.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Dispatch.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="WholeNumber.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientManager.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithm.cpp">
+      <Filter>Fichiers sources\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5.cpp">
+      <Filter>Fichiers sources\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="md5Impl.c">
+      <Filter>Fichiers sources\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="SHA1.cpp">
+      <Filter>Fichiers sources\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="sha1Impl.c">
+      <Filter>Fichiers sources\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket.cpp">
+      <Filter>Fichiers sources\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketSelection.cpp">
+      <Filter>Fichiers sources\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerCommunication.cpp">
+      <Filter>Fichiers sources\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralProtocol.cpp">
+      <Filter>Fichiers sources\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="OperatorProtocol.cpp">
+      <Filter>Fichiers sources\Protocol</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Console.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Dispatch.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Dispatcher.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="WholeNumber.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientManager.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm.h">
+      <Filter>Fichiers d%27en-tête\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5.h">
+      <Filter>Fichiers d%27en-tête\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="SHA1.h">
+      <Filter>Fichiers d%27en-tête\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="sha1Impl.h">
+      <Filter>Fichiers d%27en-tête\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="md5Impl.h">
+      <Filter>Fichiers d%27en-tête\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralProtocol.h">
+      <Filter>Fichiers d%27en-tête\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="OperatorProtocol.h">
+      <Filter>Fichiers d%27en-tête\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerCommunication.h">
+      <Filter>Fichiers d%27en-tête\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket.h">
+      <Filter>Fichiers d%27en-tête\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketSelection.h">
+      <Filter>Fichiers d%27en-tête\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientDisconnectException.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
