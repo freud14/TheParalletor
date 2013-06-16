@@ -45,8 +45,10 @@ public:
     Thread() {
         this->threadTerminated = false;
         #ifdef linux
-        this->hThreadTerminated = new pthread_cond_t(PTHREAD_COND_INITIALIZER); /* Création de la condition */
-        this->mtxThreadTerminated = new pthread_mutex_t(PTHREAD_MUTEX_INITIALIZER); /* Création du mutex */
+        this->hThreadTerminated = new pthread_cond_t(); /* Création de la condition */
+	pthread_cond_init(this->hThreadTerminated, NULL);
+        this->mtxThreadTerminated = new pthread_mutex_t(); /* Création du mutex */
+	pthread_mutex_init(this->mtxThreadTerminated, NULL);
         #elif defined _WIN32
         this->hThreadTerminated = CreateEvent(NULL, 0, 0, NULL);
         #endif

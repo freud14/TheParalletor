@@ -27,8 +27,10 @@ Pool::Pool(short nbWorkers) {
     this->hNewTaskEvent = CreateEvent(NULL, 0, 0, NULL);
     this->hFreeWorkerEvent = CreateEvent(NULL, 0, 0, NULL);
 #elif defined linux
-    this->hFreeWorkerEvent = new pthread_cond_t(PTHREAD_COND_INITIALIZER); /* Création de la condition */
-    this->mtxFreeWorkerEvent = new pthread_mutex_t(PTHREAD_MUTEX_INITIALIZER); /* Création du mutex */
+    this->hFreeWorkerEvent = new pthread_cond_t(); /* Création de la condition */
+    pthread_cond_init(this->hFreeWorkerEvent, NULL);
+    this->mtxFreeWorkerEvent = new pthread_mutex_t(); /* Création du mutex */
+    pthread_mutex_init(this->mtxFreeWorkerEvent, NULL);
 #endif
 
     //On d�marre les Workers

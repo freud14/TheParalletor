@@ -8,8 +8,12 @@
 
 #include "Dispatcher.h"
 #include "Dispatch.h"
-#define DIVISION_COEF 2
 
+#ifdef linux
+#include <unistd.h>
+#endif
+
+#define DIVISION_COEF 2
 /**
 	Le constructeur se charge de créer et d'initiliser les
 	Dispatch.
