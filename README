@@ -10,8 +10,9 @@ d'utiliser tous les coeurs de la machine. Le programme a été fait
 en C++.
 
 La partie cliente du projet est compatible Linux et Windows. Par 
-contre, le serveur et l'opérateur ne le sont pas et sont exclusivement. 
-Un travail de conversion pourrait être fait afin de les rendre compatible.
+contre, le serveur et l'opérateur ne le sont pas et sont exclusivement
+Windows. Un travail de conversion pourrait être fait afin de les rendre
+ compatible.
 
 Copyright (C) 2011 Louis-Étienne Dorval et Frédérik Paradis
 This program is free software: you can redistribute it and/or modify
